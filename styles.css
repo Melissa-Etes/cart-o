@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 10vh;
+    background: #161623;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.container.card{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba (255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255,255, 0.5);
+}
+
+.container.card.content{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0,5s;
+}
+
+.container.card:hover.content{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+.card {
+    background-color:#4f673c ;
+    border-radius: 15px;
+    width: 300px;
+    height: 530px;
+    margin-top: 100px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+.imagem {
+    display: flex;
+    justify-content: center;
+}/*
+.logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+*/
+.loguinho {
+	text-align: center;
+	font-size: 60px;
+	font-weight: bold;
+	color: #ffffff;
+    margin: 20px 20px 20px;
+    margin-top: 200px;
+}
+
+.text-main {
+    text-align: center;
+    color: #d4836cbe;
+    font-weight: 600;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+}
+
+.desc {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    text-align: center;
+    font-size: 15px;
+}
+
+.btn {
+    padding: 10px 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius:10px;
+    border: none;
+    transition:1s;
+    background-color: #d4836cbe;
+    color:#fff;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transition:1s;
+    background-color: #d4836cbe;
+    color: #fff;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
